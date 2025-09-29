@@ -10,8 +10,8 @@ const main = async () => {
     const restaurant = await tx.restaurant.create({
       data: {
         name: "MariFood",
-        slug: "MariFood",
-        description: "O melhor fast food do mundo",
+        slug: "mari-food",
+        description: "O melhor fast food da cidade",
         avatarImageUrl:
           "https://u9a6wmr3as.ufs.sh/f/jppBrbk0cChQvcNP9rHlEJu1vCY5kLqzjf29HKaeN78Z6pRy",
         coverImageUrl:
