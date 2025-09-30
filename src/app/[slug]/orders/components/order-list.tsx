@@ -39,12 +39,11 @@ const getStatusLabel = (status: OrderStatus) => {
 const OrderList = ({ orders }: OrderListProps) => {
     const router = useRouter(); 
 
-    function handleBack() {
-        router.push("/mari-food/menu?consumptionMethod=DINE_IN")
-    }
+    const handleBackClick = () => router.back();
+
     return ( 
         <div className="space-y-6 p-6">
-            <Button className="rounded-full" size="icon" variant="secondary" onClick={handleBack}>
+            <Button className="rounded-full" size="icon" variant="secondary" onClick={handleBackClick}>
                 <ChevronLeftIcon />
             </Button>
             <div className="flex items-center gap-3">
